@@ -1,0 +1,130 @@
+/*fonts css start*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*fonts css end*/
+
+/*common css start*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body, h1, h2, h3, h4, h5, h6, ul, li, p, a, span{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+}
+body.no_scroll {
+    overflow: hidden;
+}
+a, button, input[type=submit], select{
+    cursor: pointer;
+}
+a, a:hover, a:focus, 
+button, button:hover, button:focus,
+input, input:hover, input:focus, 
+textarea, textarea:hover, textarea:focus,
+select, select:hover, select:focus{
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/*common css end*/
+
+/*header css start*/
+header.site_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FAFCFF;
+}
+header.site_nav .navbar-brand h3 {
+    color: #212529;
+    font-weight: 700;
+}
+/*header css end*/
+
+/*footer css start*/
+footer.site_footer {
+    background-color: #5290ff;
+    padding: 15px 0;
+}
+footer.site_footer p {
+    font-size: 16px;
+}
+/*footer css end*/
+
+/*image upload css start*/
+.image_upload_section {
+    min-height: calc(100vh - 54px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+.image_upload_section h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #212529;
+}
+.image_upload_box {
+    text-align: center;
+    display: block;
+    border: 2px dashed #5290FF;
+    background-color: #FAFCFF;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+}
+.image_upload_box input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+.image_upload_box svg {
+    width: 100px;
+    fill: #5290FF;
+}
+.image_upload_box p {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0 28px;
+}
+.image_upload_box p span {
+    color: #5290ff;
+}
+.image_upload_box label {
+    display: inline-block;
+    margin: 0;
+    min-width: 150px;
+    background-color: #5290ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 10px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+/*image upload css end*/
